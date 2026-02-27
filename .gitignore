@@ -1,0 +1,12 @@
+.Rproj.user
+RoughWork
+docs
+Release.R
+.Rhistory
+.Rdata
+.Ruserdata
+.httr-oauth
+.DS_Store
+.quarto
+DiversityStats.pdf
+.RData

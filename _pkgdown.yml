@@ -1,0 +1,44 @@
+template:
+  bootstrap: 5
+  light-switch: no
+  math-rendering: mathjax
+  bslib:
+    bootswatch: simplex
+    pkgdown-nav-height: 100px
+
+deploy:
+  install_metadata: yes
+
+url: https://aravind-j.github.io/DiversityStats/
+
+navbar:
+  structure:
+    left:
+    - home
+    - reference
+    - articles
+    right:
+    - search
+    - github
+    - lightswitch
+  components:
+    home:
+      icon: fa-home fa-lg
+      text: Home
+      href: index.html
+    reference:
+      icon: fa-code
+      text: Reference
+      href: reference/index.html
+    tutorial:
+      icon: far fa-file
+      text: Tutorial
+      href: articles/index.html
+    github:
+      icon: fab fa-github-alt
+      text: Github
+      href: https://github.com/aravind-j/DiversityStats
+
+search:
+  exclude: news/index.html
+

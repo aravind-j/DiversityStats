@@ -1,0 +1,53 @@
+Package: DiversityStats
+Title: Diversity Indices with Statistical Inference
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "J.", family = "Aravind",
+           email = "j.aravind@icar.org.in",
+           role = c("aut", "cre"),
+		       comment = c(ORCID = "0000-0002-4791-442X")),
+    person(given = "Suman", family = "Roy",
+           email = "suman.roy@icar.org.in",
+           role = c("aut"),
+		       comment = c(ORCID = "0000-0001-5612-8415")),
+		person("ICAR-NBGPR",
+           role = c("cph"),
+		       comment = c(url = "www.nbpgr.org.in")))
+Description: Provides a comprehensive framework for analyzing diversity from 
+    frequency/abundance count data. Implements a wide range of classical and 
+    entropy-based diversity indices, including Berger-Parker, Simpson (and 
+    related variants), Shannon, Brillouin, McIntosh, Margalef, Menhinick and 
+    Smith-Wilson. Supports permutation-based hypothesis tests for comparing 
+    groups with respect to diversity (global and pairwise comparisons), as well 
+    as confidence interval estimation using multiple bootstrap methods. 
+    Includes functionality for generating diversity profiles based on 
+    parametric families such as Hill numbers, Rényi entropy, and Tsallis 
+    entropy. The methods are applicable to ecological community data (species 
+    abundance counts) and genetic or phenotypic class frequency data.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+BuildManual: TRUE
+Imports: boot,
+    dplyr,
+    mathjaxr,
+    multcompView,
+    Rdpack,
+    stats,
+    tidyr,
+    utils
+Suggests: cluster,
+    EvaluateCore,
+    ggplot2,
+    knitr,
+    pander,
+    rmarkdown,
+    vegan
+RdMacros: mathjaxr,
+    Rdpack
+Copyright: 2025-2026, ICAR-NBPGR
+URL: https://github.com/aravind-j/DiversityStats
+   https://aravind-j.github.io/DiversityStats/
+BugReports: https://github.com/aravind-j/DiversityStats/issues
+Depends: 
+    R (>= 3.5)
