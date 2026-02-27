@@ -1,0 +1,38 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "DiversityStats" in publications use:'
+type: software
+license: GPL-2.0-or-later
+title: 'DiversityStats: Diversity Indices with Statistical Inference'
+version: 0.0.0.9000
+abstract: Provides a comprehensive framework for analyzing diversity from frequency/abundance
+  count data. Implements a wide range of classical and entropy-based diversity indices,
+  including Berger-Parker, Simpson (and related variants), Shannon, Brillouin, McIntosh,
+  Margalef, Menhinick and Smith-Wilson. Supports permutation-based hypothesis tests
+  for comparing groups with respect to diversity (global and pairwise comparisons),
+  as well as confidence interval estimation using multiple bootstrap methods. Includes
+  functionality for generating diversity profiles based on parametric families such
+  as Hill numbers, Rényi entropy, and Tsallis entropy. The methods are applicable
+  to ecological community data (species abundance counts) and genetic or phenotypic
+  class frequency data.
+authors:
+- family-names: Aravind
+  given-names: J.
+  email: j.aravind@icar.org.in
+  orcid: https://orcid.org/0000-0002-4791-442X
+- family-names: Roy
+  given-names: Suman
+  email: suman.roy@icar.org.in
+  orcid: https://orcid.org/0000-0001-5612-8415
+repository-code: https://github.com/aravind-j/DiversityStats
+url: https://aravind-j.github.io/DiversityStats/
+contact:
+- family-names: Aravind
+  given-names: J.
+  email: j.aravind@icar.org.in
+  orcid: https://orcid.org/0000-0002-4791-442X
+
