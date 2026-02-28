@@ -34,7 +34,7 @@ A list of the different diversity measures computed. \describe{
   or Gini-Simpson Index or Nei's Diversity Index or Nei's Variation Index
   (\mjseqn{D}) or Hurlbert’s probability of interspecific encounter
   (\mjseqn{PIE})
-  \insertCite{gini_variabilita_1912,gini_variabilita_1912-2,greenberg_measurement_1956,berger_diversity_1970,hurlbert_nonconcept_1971,nei_analysis_1973,peet_measurement_1974}{DiversityStats}}
+  \insertCite{gini_variabilita_1912,gini_variabilita_1912-1,greenberg_measurement_1956,berger_diversity_1970,hurlbert_nonconcept_1971,nei_analysis_1973,peet_measurement_1974}{DiversityStats}}
   \item{simpson_max}{Maximum Simpson's Index of Diversity or Maximum Nei's
   Diversity/Variation Index (\mjseqn{D_{max}})
   \insertCite{hennink_interpretation_1990}{DiversityStats}}
@@ -95,7 +95,7 @@ Index (\mjseqn{D_{BP_{R}}}) \insertCite{magurran_measuring_2011}{DiversityStats}
 \item{Simpson's Index of Diversity or Gini's Diversity Index or Gini-Simpson
 Index or Nei's Diversity Index or Nei's Variation Index (\mjseqn{D}) or
 Hurlbert’s probability of interspecific encounter (\mjseqn{PIE})
-\insertCite{gini_variabilita_1912,gini_variabilita_1912-2,greenberg_measurement_1956,berger_diversity_1970,hurlbert_nonconcept_1971,nei_analysis_1973,peet_measurement_1974}{DiversityStats}}
+\insertCite{gini_variabilita_1912,gini_variabilita_1912-1,greenberg_measurement_1956,berger_diversity_1970,hurlbert_nonconcept_1971,nei_analysis_1973,peet_measurement_1974}{DiversityStats}}
 \item{Maximum Simpson's Index of Diversity or Maximum Nei's
 Diversity/Variation Index (\mjseqn{D_{max}})
 \insertCite{hennink_interpretation_1990}{DiversityStats}} \item{Simpson's
@@ -185,7 +185,7 @@ Index (\mjseqn{E_{var}}) \insertCite{smith_consumers_1996}{DiversityStats}}
   (\mjseqn{D})
   \insertCite{greenberg_measurement_1956,berger_diversity_1970,hurlbert_nonconcept_1971,peet_measurement_1974,hennink_interpretation_1990}{DiversityStats}
    originally suggested by
-  \insertCite{gini_variabilita_1912,gini_variabilita_1912-2;textual}{DiversityStats}
+  \insertCite{gini_variabilita_1912,gini_variabilita_1912-1;textual}{DiversityStats}
    and described in literature as Gini's diversity index or Gini-Simpson
   index. It is the same as Nei's diversity index or Nei's variation index
   \insertCite{nei_analysis_1973,hennink_interpretation_1990}{DiversityStats}.

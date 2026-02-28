@@ -1,6 +1,16 @@
 
 #' Generate Diversity Profiles for Parametric Indices
 #'
+#' Computes diversity profiles across a continuous range of sensitivity
+#' parameter (The order \code{q}) using parametric diversity indices such as
+#' Hill numbers, Rényi entropy, and Tsallis entropy. The function also supports
+#' the generation of multiple profiles to enable comparisons among groups. It
+#' provides flexible options for generation of bootstrap confidence intervals
+#' for the values.
+#'
+#' See \strong{Parametric Indices} in \code{\link{diversity.calc}} for
+#' theoretical details.
+#'
 #' @param x A numeric or factor vector of observations.
 #' @param group A factor vector indicating the group of each observation. Must
 #'   have the same length as \code{x}.
@@ -14,13 +24,16 @@
 #' @param ci.conf Confidence level of the bootstrap interval. Default is 0.95.
 #' @param ci.type A vector of character strings representing the type of
 #'   intervals required. The options are \code{c("perc", "bca")}.
-#' @param seed Integer. Random seed used to ensure reproducibility of
-#'   bootstrap. Default is 123.
+#' @param seed Integer. Random seed used to ensure reproducibility of bootstrap.
+#'   Default is 123.
 #' @inheritParams boot::boot
 #'
 #' @returns A list of data frames with the following columns for each factor
 #'   level in \code{group}. \describe{ \item{q}{} \item{observed}{}
 #'   \item{mean}{} \item{lower}{} \item{upper}{} }
+#'
+#' @inheritSection bootstrap.ci Note
+#'
 #' @export
 #'
 #' @examples
@@ -43,11 +56,14 @@
 #' important_q <- c(0, 1, 2)
 #' important_labels <- c("0D", "1D", "2D")
 #'
+#' # NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+#'
 #' # Hill profile - Percentile CIs ----
 #'
 #' hill_profile1 <-
 #'   diversity.profile(x = pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "hill", ci.type = "perc")
+#'                     parameter = "hill", ci.type = "perc",
+#'                     R = 100)
 #' hill_profile1
 #'
 #' hill_profile1_df <- dplyr::bind_rows(hill_profile1, .id = "group")
@@ -81,7 +97,8 @@
 #'
 #' renyi_profile1 <-
 #'   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "renyi", ci.type = "perc")
+#'                     parameter = "renyi", ci.type = "perc",
+#'                     R = 100)
 #' renyi_profile1
 #'
 #' renyi_profile1_df <- dplyr::bind_rows(renyi_profile1, .id = "group")
@@ -115,10 +132,8 @@
 #'
 #' tsallis_profile1 <-
 #'   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "tsallis", ci.type = "perc")
-#' tsallis_profile1 <-
-#'   diversity.profile(x = pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "hill", ci.type = "perc")
+#'                     parameter = "tsallis", ci.type = "perc",
+#'                     R = 100)
 #' tsallis_profile1
 #'
 #' tsallis_profile1_df <- dplyr::bind_rows(tsallis_profile1, .id = "group")
@@ -152,7 +167,8 @@
 #'
 #' hill_profile2 <-
 #'   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "hill", ci.type = "bca")
+#'                     parameter = "hill", ci.type = "bca",
+#'                     R = 100)
 #' hill_profile2
 #'
 #' hill_profile2_df <- dplyr::bind_rows(hill_profile2, .id = "group")
@@ -186,7 +202,8 @@
 #'
 #' renyi_profile2 <-
 #'   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "renyi", ci.type = "bca")
+#'                     parameter = "renyi", ci.type = "bca",
+#'                     R = 100)
 #' renyi_profile2
 #'
 #' renyi_profile2_df <- dplyr::bind_rows(renyi_profile2, .id = "group")
@@ -220,7 +237,8 @@
 #'
 #' tsallis_profile2 <-
 #'   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-#'                     parameter = "tsallis", ci.type = "bca")
+#'                     parameter = "tsallis", ci.type = "bca",
+#'                     R = 100)
 #' tsallis_profile2
 #'
 #' tsallis_profile2_df <- dplyr::bind_rows(tsallis_profile2, .id = "group")
@@ -249,6 +267,7 @@
 #'   facet_wrap(~ group, scales = "free_y") +
 #'   labs(x = "Order (q)", y = "Hill number") +
 #'   theme_bw()
+#'
 diversity.profile <- function(x, group, q = seq(0, 3, 0.1),
                               na.omit = TRUE,
                               ci.conf = 0.95, R = 1000,

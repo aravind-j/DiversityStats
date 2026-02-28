@@ -89,5 +89,7 @@ of diversity indices. Default is \code{exp(1)}.}
 The calculated diversity index value.
 }
 \description{
-To be used by \code{\link[DiversityStats]{diversity.calc}}.
+These are core low-level routines for the computation of multiple diversity
+indices, designed to be used by \code{\link[DiversityStats]{diversity.calc}}
+and other functions.
 }

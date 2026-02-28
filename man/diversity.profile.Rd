@@ -58,8 +58,8 @@ intervals required. The options are \code{c("perc", "bca")}.}
     local machine is created for the duration of the \code{boot} call.
   }
 
-\item{seed}{Integer. Random seed used to ensure reproducibility of
-bootstrap. Default is 123.}
+\item{seed}{Integer. Random seed used to ensure reproducibility of bootstrap.
+Default is 123.}
 }
 \value{
 A list of data frames with the following columns for each factor
@@ -67,8 +67,25 @@ A list of data frames with the following columns for each factor
   \item{mean}{} \item{lower}{} \item{upper}{} }
 }
 \description{
-Generate Diversity Profiles for Parametric Indices
+Computes diversity profiles across a continuous range of sensitivity
+parameter (The order \code{q}) using parametric diversity indices such as
+Hill numbers, Rényi entropy, and Tsallis entropy. The function also supports
+the generation of multiple profiles to enable comparisons among groups. It
+provides flexible options for generation of bootstrap confidence intervals
+for the values.
 }
+\details{
+See \strong{Parametric Indices} in \code{\link{diversity.calc}} for
+theoretical details.
+}
+\section{Note}{
+ The default number of bootstrap replicates \code{R = 1000} is
+  provided for quick exploratory analysis. For more reliable (but slower)
+  confidence intervals or standard error estimates it is strongly recommended
+  to increase \code{R} to at 5000-10000, depending on your data and required
+  precision.
+}
+
 \examples{
 
 library(EvaluateCore)
@@ -89,11 +106,14 @@ str(pdata)
 important_q <- c(0, 1, 2)
 important_labels <- c("0D", "1D", "2D")
 
+# NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+
 # Hill profile - Percentile CIs ----
 
 hill_profile1 <-
   diversity.profile(x = pdata$CUAL, group = pdata$LNGS,
-                    parameter = "hill", ci.type = "perc")
+                    parameter = "hill", ci.type = "perc",
+                    R = 100)
 hill_profile1
 
 hill_profile1_df <- dplyr::bind_rows(hill_profile1, .id = "group")
@@ -127,7 +147,8 @@ ggplot(hill_profile1_df, aes(x = q, y = observed)) +
 
 renyi_profile1 <-
   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-                    parameter = "renyi", ci.type = "perc")
+                    parameter = "renyi", ci.type = "perc",
+                    R = 100)
 renyi_profile1
 
 renyi_profile1_df <- dplyr::bind_rows(renyi_profile1, .id = "group")
@@ -161,10 +182,8 @@ ggplot(renyi_profile1_df, aes(x = q, y = observed)) +
 
 tsallis_profile1 <-
   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-                    parameter = "tsallis", ci.type = "perc")
-tsallis_profile1 <-
-  diversity.profile(x = pdata$CUAL, group = pdata$LNGS,
-                    parameter = "hill", ci.type = "perc")
+                    parameter = "tsallis", ci.type = "perc",
+                    R = 100)
 tsallis_profile1
 
 tsallis_profile1_df <- dplyr::bind_rows(tsallis_profile1, .id = "group")
@@ -198,7 +217,8 @@ ggplot(tsallis_profile1_df, aes(x = q, y = observed)) +
 
 hill_profile2 <-
   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-                    parameter = "hill", ci.type = "bca")
+                    parameter = "hill", ci.type = "bca",
+                    R = 100)
 hill_profile2
 
 hill_profile2_df <- dplyr::bind_rows(hill_profile2, .id = "group")
@@ -232,7 +252,8 @@ ggplot(hill_profile2_df, aes(x = q, y = observed)) +
 
 renyi_profile2 <-
   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-                    parameter = "renyi", ci.type = "bca")
+                    parameter = "renyi", ci.type = "bca",
+                    R = 100)
 renyi_profile2
 
 renyi_profile2_df <- dplyr::bind_rows(renyi_profile2, .id = "group")
@@ -266,7 +287,8 @@ ggplot(renyi_profile2_df, aes(x = q, y = observed)) +
 
 tsallis_profile2 <-
   diversity.profile(pdata$CUAL, group = pdata$LNGS,
-                    parameter = "tsallis", ci.type = "bca")
+                    parameter = "tsallis", ci.type = "bca",
+                    R = 100)
 tsallis_profile2
 
 tsallis_profile2_df <- dplyr::bind_rows(tsallis_profile2, .id = "group")
@@ -295,4 +317,5 @@ ggplot(tsallis_profile2_df, aes(x = q, y = observed)) +
   facet_wrap(~ group, scales = "free_y") +
   labs(x = "Order (q)", y = "Hill number") +
   theme_bw()
+
 }

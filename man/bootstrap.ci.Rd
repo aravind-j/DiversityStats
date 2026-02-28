@@ -53,8 +53,8 @@ all five types of intervals.}
     local machine is created for the duration of the \code{boot} call.
   }
 
-\item{seed}{Integer. Random seed used to ensure reproducibility of
-bootstrap. Default is 123.}
+\item{seed}{Integer. Random seed used to ensure reproducibility of bootstrap.
+Default is 123.}
 
 \item{...}{Additional arguments passed to \code{fun}.}
 }
@@ -76,6 +76,14 @@ intervals. If a requested interval type cannot be computed (for example,
 studentized or BCa intervals), the function falls back to percentile
 intervals.
 }
+\section{Note}{
+ The default number of bootstrap replicates \code{R = 1000} is
+  provided for quick exploratory analysis. For more reliable (but slower)
+  confidence intervals or standard error estimates it is strongly recommended
+  to increase \code{R} to at 5000-10000, depending on your data and required
+  precision.
+}
+
 \examples{
 library(EvaluateCore)
 
@@ -90,28 +98,32 @@ pdata[, qual] <- lapply(pdata[, qual], as.factor)
 
 str(pdata)
 
+# NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+
 # Bootstrap CIs ----
 
-bootstrap.ci(pdata$NMSR, mean, type = "norm")
-bootstrap.ci(pdata$NMSR, mean, type = "basic")
-bootstrap.ci(pdata$NMSR, mean, type = "perc")
-bootstrap.ci(pdata$NMSR, mean, type = "bca")
+bootstrap.ci(pdata$NMSR, mean, type = "norm", R = 100)
+bootstrap.ci(pdata$NMSR, mean, type = "basic", R = 100)
+bootstrap.ci(pdata$NMSR, mean, type = "perc", R = 100)
+bootstrap.ci(pdata$NMSR, mean, type = "bca", R = 100)
 
 bootstrap.ci(pdata$NMSR, mean,
-             type = c("norm", "basic", "perc", "bca"))
+             type = c("norm", "basic", "perc", "bca"),
+             R = 100)
 
-bootstrap.ci(pdata$LNGS, shannon, type = "norm")
-bootstrap.ci(pdata$PTLC, simpson, type = "basic")
-bootstrap.ci(pdata$LFRT, mcintosh_evenness, type = "perc")
-bootstrap.ci(pdata$LBTEF, mcintosh_diversity, type = "bca")
+bootstrap.ci(pdata$LNGS, shannon, type = "norm", R = 100)
+bootstrap.ci(pdata$PTLC, simpson, type = "basic", R = 100)
+bootstrap.ci(pdata$LFRT, mcintosh_evenness, type = "perc", R = 100)
+bootstrap.ci(pdata$LBTEF, mcintosh_diversity, type = "bca", R = 100)
 
 bootstrap.ci(pdata$LNGS, shannon,
-             type = c("norm", "basic", "perc", "bca"), base = 2)
+             type = c("norm", "basic", "perc", "bca"),
+             R = 100, base = 2)
 
 # Studentised intervals require a `fun` returning
 # variances in addition to an estimate
 
-bootstrap.ci(pdata$NMSR, mean, type = "stud")
+bootstrap.ci(pdata$NMSR, mean, type = "stud", R = 100)
 
 stat_fun_mean <- function(x) {
   est <- mean(x)
@@ -122,9 +134,9 @@ stat_fun_mean <- function(x) {
   return(out)
 }
 
-bootstrap.ci(pdata$NMSR, stat_fun_mean, type = "stud")
+bootstrap.ci(pdata$NMSR, stat_fun_mean, type = "stud", R = 100)
 
-bootstrap.ci(pdata$DSTA, shannon, type = "stud")
+bootstrap.ci(pdata$DSTA, shannon, type = "stud", R = 100)
 
 stat_fun_shannon <- function(x, base = 2) {
   tab <- tabulate(x)
@@ -140,6 +152,6 @@ stat_fun_shannon <- function(x, base = 2) {
   return(out)
 }
 
-bootstrap.ci(pdata$DSTA, stat_fun_shannon, type = "stud")
+bootstrap.ci(pdata$DSTA, stat_fun_shannon, type = "stud", R = 100)
 
 }

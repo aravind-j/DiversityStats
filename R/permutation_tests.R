@@ -59,6 +59,8 @@
 #'
 #' str(pdata)
 #'
+#' # NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+#'
 #' # Global tests ----
 #'
 #' perm.test.global(x = pdata$NMSR, group = pdata$CUAL, fun = mean,

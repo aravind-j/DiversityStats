@@ -1,7 +1,9 @@
 
 #' Diversity Index Functions
 #'
-#' To be used by \code{\link[DiversityStats]{diversity.calc}}.
+#' These are core low-level routines for the computation of multiple diversity
+#' indices, designed to be used by \code{\link[DiversityStats]{diversity.calc}}
+#' and other functions.
 #'
 #' @param x A factor vector of categories (e.g., species, traits). The frequency
 #'   of each level is treated as the abundance of that category.
