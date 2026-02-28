@@ -441,8 +441,8 @@ Greenberg JH (1956). “The measurement of linguistic diversity.”
 *Language*, **32**(1), 109.  
   
 Havrda J, Charvat F (1967). “Quantification method of classification
-processes. Concept of structural \<p\>&alpha;\</p\>-entropy.”
-*Kybernetika*, **3**(1), (30)–35.  
+processes. Concept of structural α-entropy.” *Kybernetika*, **3**(1),
+(30)–35.  
   
 Heip C (1974). “A new index measuring evenness.” *Journal of the Marine
 Biological Association of the United Kingdom*, **54**(3), 555–557.  

@@ -240,6 +240,8 @@ p-values for multiple comparisons. Options include <code>"bonferroni"</code> and
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ ARSR  : num  2 0 2 0 3 0 0 6 0 0 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ SRDM  : num  42 39.8 29.7 43 37.9 37 38.9 36.9 41 37.9 ...</span>
 <span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># NOTE: Increase R to 10000 for more reliable (but slower) estimates.</span></span></span>
+<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Global tests ----</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">perm.test.global</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pdata</span><span class="op">$</span><span class="va">NMSR</span>, group <span class="op">=</span> <span class="va">pdata</span><span class="op">$</span><span class="va">CUAL</span>, fun <span class="op">=</span> <span class="va">mean</span>,</span></span>

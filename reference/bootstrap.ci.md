@@ -95,6 +95,14 @@ accelerated (BCa) intervals. If a requested interval type cannot be
 computed (for example, studentized or BCa intervals), the function falls
 back to percentile intervals.
 
+## Note
+
+The default number of bootstrap replicates `R = 1000` is provided for
+quick exploratory analysis. For more reliable (but slower) confidence
+intervals or standard error estimates it is strongly recommended to
+increase `R` to at 5000-10000, depending on your data and required
+precision.
+
 ## Examples
 
 ``` r
@@ -153,99 +161,102 @@ str(pdata)
 #>  $ ARSR  : num  2 0 2 0 3 0 0 6 0 0 ...
 #>  $ SRDM  : num  42 39.8 29.7 43 37.9 37 38.9 36.9 41 37.9 ...
 
+# NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+
 # Bootstrap CIs ----
 
-bootstrap.ci(pdata$NMSR, mean, type = "norm")
+bootstrap.ci(pdata$NMSR, mean, type = "norm", R = 100)
 #> $norm
 #>     lower     upper 
-#>  9.617438 12.168276 
+#>  9.744395 12.041320 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$norm
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$NMSR, mean, type = "basic")
+bootstrap.ci(pdata$NMSR, mean, type = "basic", R = 100)
 #> $basic
-#>    lower    upper 
-#>  9.57753 12.20149 
+#>     lower     upper 
+#>  9.343452 11.821131 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$basic
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$NMSR, mean, type = "perc")
+bootstrap.ci(pdata$NMSR, mean, type = "perc", R = 100)
 #> $perc
 #>     lower     upper 
-#>  9.584226 12.208185 
+#>  9.964583 12.442262 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$perc
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$NMSR, mean, type = "bca")
+bootstrap.ci(pdata$NMSR, mean, type = "bca", R = 100)
 #> $bca
 #>     lower     upper 
-#>  9.600968 12.213984 
+#>  9.984608 12.607224 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$bca
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
 bootstrap.ci(pdata$NMSR, mean,
-             type = c("norm", "basic", "perc", "bca"))
+             type = c("norm", "basic", "perc", "bca"),
+             R = 100)
 #> $norm
 #>     lower     upper 
-#>  9.617438 12.168276 
+#>  9.744395 12.041320 
 #> 
 #> $basic
-#>    lower    upper 
-#>  9.57753 12.20149 
+#>     lower     upper 
+#>  9.343452 11.821131 
 #> 
 #> $perc
 #>     lower     upper 
-#>  9.584226 12.208185 
+#>  9.964583 12.442262 
 #> 
 #> $bca
 #>     lower     upper 
-#>  9.600968 12.213984 
+#>  9.984608 12.607224 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$norm
 #> [1] FALSE
@@ -260,101 +271,102 @@ bootstrap.ci(pdata$NMSR, mean,
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
-bootstrap.ci(pdata$LNGS, shannon, type = "norm")
+bootstrap.ci(pdata$LNGS, shannon, type = "norm", R = 100)
 #> $norm
 #>    lower    upper 
-#> 1.364427 1.533204 
+#> 1.364610 1.533021 
 #> 
 #> attr(,"observed")
 #> [1] 1.448816
 #> attr(,"mean")
-#> [1] 1.44097
+#> [1] 1.44056
 #> attr(,"fallback")
 #> attr(,"fallback")$norm
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$PTLC, simpson, type = "basic")
+bootstrap.ci(pdata$PTLC, simpson, type = "basic", R = 100)
 #> $basic
 #>     lower     upper 
-#> 0.3508521 0.4809329 
+#> 0.3438811 0.4818683 
 #> 
 #> attr(,"observed")
 #> [1] 0.4213435
 #> attr(,"mean")
-#> [1] 0.4230488
+#> [1] 0.4230357
 #> attr(,"fallback")
 #> attr(,"fallback")$basic
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$LFRT, mcintosh_evenness, type = "perc")
+bootstrap.ci(pdata$LFRT, mcintosh_evenness, type = "perc", R = 100)
 #> $perc
 #>     lower     upper 
-#> 0.6289354 0.8262168 
+#> 0.6409148 0.8392629 
 #> 
 #> attr(,"observed")
 #> [1] 0.693727
 #> attr(,"mean")
-#> [1] 0.7067876
+#> [1] 0.7159661
 #> attr(,"fallback")
 #> attr(,"fallback")$perc
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
-bootstrap.ci(pdata$LBTEF, mcintosh_diversity, type = "bca")
+bootstrap.ci(pdata$LBTEF, mcintosh_diversity, type = "bca", R = 100)
 #> $bca
 #>     lower     upper 
-#> 0.5861558 0.6150982 
+#> 0.5911993 0.6102395 
 #> 
 #> attr(,"observed")
 #> [1] 0.5983483
 #> attr(,"mean")
-#> [1] 0.5923744
+#> [1] 0.5922933
 #> attr(,"fallback")
 #> attr(,"fallback")$bca
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
 bootstrap.ci(pdata$LNGS, shannon,
-             type = c("norm", "basic", "perc", "bca"), base = 2)
+             type = c("norm", "basic", "perc", "bca"),
+             R = 100, base = 2)
 #> $norm
 #>    lower    upper 
-#> 1.364427 1.533204 
+#> 1.364610 1.533021 
 #> 
 #> $basic
 #>    lower    upper 
-#> 1.380128 1.550485 
+#> 1.370423 1.557680 
 #> 
 #> $perc
 #>    lower    upper 
-#> 1.347146 1.517504 
+#> 1.339951 1.527208 
 #> 
 #> $bca
 #>    lower    upper 
-#> 1.358274 1.528812 
+#> 1.358192 1.545121 
 #> 
 #> attr(,"observed")
 #> [1] 1.448816
 #> attr(,"mean")
-#> [1] 1.44097
+#> [1] 1.44056
 #> attr(,"fallback")
 #> attr(,"fallback")$norm
 #> [1] FALSE
@@ -369,29 +381,29 @@ bootstrap.ci(pdata$LNGS, shannon,
 #> [1] FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
 # Studentised intervals require a `fun` returning
 # variances in addition to an estimate
 
-bootstrap.ci(pdata$NMSR, mean, type = "stud")
+bootstrap.ci(pdata$NMSR, mean, type = "stud", R = 100)
 #> Warning: Studentized CI requires fun() to return c(estimate, SE); using percentile instead.
 #> $stud
 #>     lower     upper 
-#>  9.584226 12.208185 
+#>  9.964583 12.442262 
 #> 
 #> attr(,"observed")
 #> [1] 10.89286
 #> attr(,"mean")
-#> [1] 10.90556
+#> [1] 10.91714
 #> attr(,"fallback")
 #> attr(,"fallback")$stud
 #> [1] TRUE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
@@ -404,42 +416,42 @@ stat_fun_mean <- function(x) {
   return(out)
 }
 
-bootstrap.ci(pdata$NMSR, stat_fun_mean, type = "stud")
+bootstrap.ci(pdata$NMSR, stat_fun_mean, type = "stud", R = 100)
 #> $stud
-#>     lower     upper 
-#>  9.626269 12.268758 
+#>    lower    upper 
+#>  9.45995 11.87502 
 #> 
 #> attr(,"observed")
 #> [1] 10.892857  0.631431
 #> attr(,"observed")attr(,"se")
 #> [1] TRUE
 #> attr(,"mean")
-#> [1] 10.9055595  0.6259041
+#> [1] 10.9171429  0.6189151
 #> attr(,"fallback")
 #> attr(,"fallback")$stud
 #> [1] FALSE FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
-bootstrap.ci(pdata$DSTA, shannon, type = "stud")
+bootstrap.ci(pdata$DSTA, shannon, type = "stud", R = 100)
 #> Warning: Studentized CI requires fun() to return c(estimate, SE); using percentile instead.
 #> $stud
 #>    lower    upper 
-#> 1.762730 2.059521 
+#> 1.739276 2.061699 
 #> 
 #> attr(,"observed")
 #> [1] 1.946525
 #> attr(,"mean")
-#> [1] 1.92782
+#> [1] 1.93451
 #> attr(,"fallback")
 #> attr(,"fallback")$stud
 #> [1] TRUE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 
@@ -457,23 +469,23 @@ stat_fun_shannon <- function(x, base = 2) {
   return(out)
 }
 
-bootstrap.ci(pdata$DSTA, stat_fun_shannon, type = "stud")
+bootstrap.ci(pdata$DSTA, stat_fun_shannon, type = "stud", R = 100)
 #> $stud
 #>    lower    upper 
-#> 1.835888 2.136488 
+#> 1.833896 2.159590 
 #> 
 #> attr(,"observed")
 #> [1] 1.94652505 0.07067869
 #> attr(,"observed")attr(,"se")
 #> [1] TRUE
 #> attr(,"mean")
-#> [1] 1.92781960 0.07034802
+#> [1] 1.93450968 0.07040531
 #> attr(,"fallback")
 #> attr(,"fallback")$stud
 #> [1] FALSE FALSE
 #> 
 #> attr(,"R")
-#> [1] 1000
+#> [1] 100
 #> attr(,"conf")
 #> [1] 0.95
 ```

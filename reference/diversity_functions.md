@@ -1,7 +1,9 @@
 # Diversity Index Functions
 
-To be used by
-[`diversity.calc`](https://aravind-j.github.io/DiversityStats/reference/diversity.calc.md).
+These are core low-level routines for the computation of multiple
+diversity indices, designed to be used by
+[`diversity.calc`](https://aravind-j.github.io/DiversityStats/reference/diversity.calc.md)
+and other functions.
 
 ## Usage
 

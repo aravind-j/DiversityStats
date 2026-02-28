@@ -187,6 +187,8 @@ str(pdata)
 #>  $ ARSR  : num  2 0 2 0 3 0 0 6 0 0 ...
 #>  $ SRDM  : num  42 39.8 29.7 43 37.9 37 38.9 36.9 41 37.9 ...
 
+# NOTE: Increase R to 10000 for more reliable (but slower) estimates.
+
 # Global tests ----
 
 perm.test.global(x = pdata$NMSR, group = pdata$CUAL, fun = mean,
