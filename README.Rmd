@@ -17,7 +17,7 @@ knitr::include_graphics("https://raw.githubusercontent.com/aravind-j/DiversitySt
 ```
 -->
 
-## `DiversityStats`: Sampling Strategies for Constructing Core Collections
+## `DiversityStats`: Diversity Indices with Statistical Inference
 <img src="https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png" align="right" alt="logo" width="173" height = "200" style = "border: none; float: right;">
 
 ```{r,echo = FALSE, message = FALSE}

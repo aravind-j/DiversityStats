@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png" alt="" width="20%" />
 -->
 
-## `DiversityStats`: Sampling Strategies for Constructing Core Collections
+## `DiversityStats`: Diversity Indices with Statistical Inference
 
 <img src="https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png" align="right" alt="logo" width="173" height = "200" style = "border: none; float: right;">
 
@@ -38,7 +38,7 @@ Size](https://img.shields.io/github/languages/code-size/aravind-j/DiversityStats
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-maturing.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2026--02--27-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2026--02--28-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
 <!-- [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.zenodo.14889174.svg)](https://doi.org/10.5281/zenodo.14889174) -->
 [![Website -
 pkgdown](https://img.shields.io/website-up-down-green-red/https/aravind-j.github.io/DiversityStats.svg)](https://aravind-j.github.io/DiversityStats/)
