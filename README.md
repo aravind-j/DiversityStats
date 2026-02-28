@@ -23,9 +23,7 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 
 <!-- [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version-last-release/DiversityStats)](https://cran.r-project.org/package=DiversityStats)
 [![Dependencies](https://tinyverse.netlify.app/status/DiversityStats)](https://cran.r-project.org/package=DiversityStats) -->
-
 <!-- [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/DiversityStats?color=green)](https://CRAN.R-project.org/package=DiversityStats) -->
-
 <!-- 
 [![develVersion](https://img.shields.io/badge/devel%20version-0.0.0.9000-orange.svg)](https://github.com/aravind-j/DiversityStats)
 -->
@@ -52,20 +50,20 @@ pkgdown](https://img.shields.io/website-up-down-green-red/https/aravind-j.github
 
 ## Description
 
-<!-- Provides a comprehensive framework for analyzing diversity from      frequency/abundance count data. Implements a wide range of classical and      entropy-based diversity indices, including Berger-Parker, Simpson (and      related variants), Shannon, Brillouin, McIntosh, Margalef, Menhinick and      Smith-Wilson. Supports permutation-based hypothesis tests for comparing      groups with respect to diversity (global and pairwise comparisons), as well      as confidence interval estimation using multiple bootstrap methods.      Includes functionality for generating diversity profiles based on      parametric families such as Hill numbers, Rényi entropy, and Tsallis      entropy. The methods are applicable to ecological community data (species      abundance counts) and genetic or phenotypic class frequency data. -->
+<!-- Provides a comprehensive framework for analyzing diversity from frequency/abundance count data. Implements a wide range of classical and entropy-based diversity indices, including Berger-Parker, Simpson (and related variants), Shannon, Brillouin, McIntosh, Margalef, Menhinick and Smith-Wilson. Supports permutation-based hypothesis tests for comparing groups with respect to diversity (global and pairwise comparisons), as well as confidence interval estimation using multiple bootstrap methods. Includes functionality for generating diversity profiles based on parametric families such as Hill numbers, Rényi entropy, and Tsallis entropy. The methods are applicable to ecological community data (species abundance counts) and genetic or phenotypic class frequency data. -->
 
-Provides a comprehensive framework for analyzing diversity from
-frequency/abundance count data. Implements a wide range of classical and
-entropy-based diversity indices, including Berger-Parker, Simpson (and
-related variants), Shannon, Brillouin, McIntosh, Margalef, Menhinick and
-Smith-Wilson. Supports permutation-based hypothesis tests for comparing
-groups with respect to diversity (global and pairwise comparisons), as
-well as confidence interval estimation using multiple bootstrap methods.
-Includes functionality for generating diversity profiles based on
-parametric families such as Hill numbers, Rényi entropy, and Tsallis
-entropy. The methods are applicable to ecological community data
-(species abundance counts) and genetic or phenotypic class frequency
-data.
+Provides a comprehensive framework for analyzing diversity
+fromfrequency/abundance count data. Implements a wide range of classical
+andentropy-based diversity indices, including Berger-Parker, Simpson
+(andrelated variants), Shannon, Brillouin, McIntosh, Margalef, Menhinick
+andSmith-Wilson. Supports permutation-based hypothesis tests for
+comparinggroups with respect to diversity (global and pairwise
+comparisons), as wellas confidence interval estimation using multiple
+bootstrap methods.Includes functionality for generating diversity
+profiles based onparametric families such as Hill numbers, Rényi
+entropy, and Tsallisentropy. The methods are applicable to ecological
+community data (speciesabundance counts) and genetic or phenotypic class
+frequency data.
 
 ## Installation
 
@@ -106,7 +104,6 @@ news(package='DiversityStats')
 [Documentation website](https://aravind-j.github.io/DiversityStats/)
 
 <!--[Zenodo DOI](https://doi.org/10.5281/zenodo.14889174) -->
-
 <!--
 ## CRAN checks
 &#10;
@@ -173,8 +170,8 @@ citation("DiversityStats")
 
     To cite package 'DiversityStats' in publications use:
 
-      Aravind J, Roy S (2026). _DiversityStats: Diversity Indices with Statistical
-      Inference_. R package version 0.0.0.9000,
+      Aravind J, Roy S (2026). _DiversityStats: Diversity Indices with
+      Statistical Inference_. R package version 0.0.0.9000,
       <https://github.com/aravind-j/DiversityStats>.
 
     A BibTeX entry for LaTeX users is
