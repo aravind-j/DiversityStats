@@ -1,7 +1,9 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://aravind-j.github.io/DiversityStats/404.html</loc></url>
 <url><loc>https://aravind-j.github.io/DiversityStats/authors.html</loc></url>
+<url><loc>https://aravind-j.github.io/DiversityStats/cran-comments-archive.html</loc></url>
 <url><loc>https://aravind-j.github.io/DiversityStats/index.html</loc></url>
+<url><loc>https://aravind-j.github.io/DiversityStats/news/index.html</loc></url>
 <url><loc>https://aravind-j.github.io/DiversityStats/reference/bootstrap.ci.html</loc></url>
 <url><loc>https://aravind-j.github.io/DiversityStats/reference/diversity.calc.html</loc></url>
 <url><loc>https://aravind-j.github.io/DiversityStats/reference/diversity.compare.html</loc></url>
