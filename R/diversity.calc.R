@@ -1,3 +1,20 @@
+### This file is part of 'DiversityStats' package for R.
+
+### Copyright (C) 2025-2026, ICAR-NBPGR.
+#
+# DiversityStats is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# DiversityStats is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+#  A copy of the GNU General Public License is available at
+#  https://www.r-project.org/Licenses/
+
 #' Compute Diversity Measures
 #'
 #' The function \code{diversity.calc} calculates the following diversity
