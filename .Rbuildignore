@@ -23,4 +23,5 @@
 ^Readme\.utf8\.Rmd$
 ^desktop\.ini$
 ^cran-comments\.md$
+^cran-comments-archive\.md$
 ^README\.html$
