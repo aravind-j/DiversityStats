@@ -23,9 +23,7 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 
 <!-- [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version-last-release/DiversityStats)](https://cran.r-project.org/package=DiversityStats)
 [![Dependencies](https://tinyverse.netlify.app/status/DiversityStats)](https://cran.r-project.org/package=DiversityStats) -->
-
 <!-- [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/DiversityStats?color=green)](https://CRAN.R-project.org/package=DiversityStats) -->
-
 <!-- 
 [![develVersion](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/aravind-j/DiversityStats)
 -->
@@ -106,7 +104,6 @@ news(package='DiversityStats')
 [Documentation website](https://aravind-j.github.io/DiversityStats/)
 
 <!--[Zenodo DOI](https://doi.org/10.5281/zenodo.14889174) -->
-
 <!--
 ## CRAN checks
 &#10;
@@ -173,7 +170,8 @@ citation("DiversityStats")
 
     To cite the R package 'DiversityStats' in publications use:
 
-      Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
+      Aravind, J. ().  DiversityStats: Diversity Indices with Statistical
+      Inference. R package version 0.1.0,
       https://aravind-j.github.io/DiversityStats/.
 
     A BibTeX entry for LaTeX users is
@@ -184,5 +182,6 @@ citation("DiversityStats")
         note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
       }
 
-    This free and open-source software implements academic research by the authors and co-workers. If you use
-    it, please support the project by citing the package.
+    This free and open-source software implements academic research by the
+    authors and co-workers. If you use it, please support the project by
+    citing the package.
