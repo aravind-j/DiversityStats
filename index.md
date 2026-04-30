@@ -4,7 +4,7 @@
 
 ###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
-##### Aravind, J. and Suman Roy
+##### *Aravind, J., Roy, Suman and Singh, Anju M.*
 
 Division of Germplasm Conservation, ICAR-National Bureau of Plant
 Genetic Resources, New Delhi.
@@ -78,7 +78,8 @@ citation("DiversityStats")
 ``` R
 To cite the R package 'DiversityStats' in publications use:
 
-  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
+  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical
+  Inference. R package version 0.1.0,
   https://aravind-j.github.io/DiversityStats/.
 
 A BibTeX entry for LaTeX users is
@@ -89,6 +90,7 @@ A BibTeX entry for LaTeX users is
     note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
   }
 
-This free and open-source software implements academic research by the authors and co-workers. If you use
-it, please support the project by citing the package.
+This free and open-source software implements academic research by the
+authors and co-workers. If you use it, please support the project by
+citing the package.
 ```

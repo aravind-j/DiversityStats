@@ -1,15 +1,9 @@
 # Package index
 
-## All functions
+## Computation of Diversity Measures
 
-- [`bootstrap.ci()`](https://aravind-j.github.io/DiversityStats/reference/bootstrap.ci.md)
-  : Bootstrap Confidence Intervals
 - [`diversity.calc()`](https://aravind-j.github.io/DiversityStats/reference/diversity.calc.md)
   : Compute Diversity Measures
-- [`diversity.compare()`](https://aravind-j.github.io/DiversityStats/reference/diversity.compare.md)
-  : Compare Diversity Measures
-- [`diversity.profile()`](https://aravind-j.github.io/DiversityStats/reference/diversity.profile.md)
-  : Generate Diversity Profiles for Parametric Indices
 - [`berger_parker()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`berger_parker_reciprocal()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`simpson()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
@@ -34,6 +28,15 @@
   [`tsallis_entropy()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`hill_evenness()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   : Diversity Index Functions
+
+## Comparison of Diversity Measures
+
+- [`diversity.compare()`](https://aravind-j.github.io/DiversityStats/reference/diversity.compare.md)
+  : Compare Diversity Measures
 - [`perm.test.global()`](https://aravind-j.github.io/DiversityStats/reference/permutation_tests.md)
   [`perm.test.pairwise()`](https://aravind-j.github.io/DiversityStats/reference/permutation_tests.md)
   : Permutation Tests
+- [`bootstrap.ci()`](https://aravind-j.github.io/DiversityStats/reference/bootstrap.ci.md)
+  : Bootstrap Confidence Intervals
+- [`diversity.profile()`](https://aravind-j.github.io/DiversityStats/reference/diversity.profile.md)
+  : Generate Diversity Profiles for Parametric Indices

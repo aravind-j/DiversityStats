@@ -4,7 +4,7 @@
 
 ###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
-##### Aravind, J. and Suman Roy
+##### *Aravind, J., Roy, Suman and Singh, Anju M.*
 
 Division of Germplasm Conservation, ICAR-National Bureau of Plant
 Genetic Resources, New Delhi.
@@ -78,7 +78,8 @@ citation("DiversityStats")
 ``` R
 To cite the R package 'DiversityStats' in publications use:
 
-  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
+  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical
+  Inference. R package version 0.1.0,
   https://aravind-j.github.io/DiversityStats/.
 
 A BibTeX entry for LaTeX users is
@@ -89,22 +90,17 @@ A BibTeX entry for LaTeX users is
     note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
   }
 
-This free and open-source software implements academic research by the authors and co-workers. If you use
-it, please support the project by citing the package.
+This free and open-source software implements academic research by the
+authors and co-workers. If you use it, please support the project by
+citing the package.
 ```
 
 # Package index
 
-## All functions
+## Computation of Diversity Measures
 
-- [`bootstrap.ci()`](https://aravind-j.github.io/DiversityStats/reference/bootstrap.ci.md)
-  : Bootstrap Confidence Intervals
 - [`diversity.calc()`](https://aravind-j.github.io/DiversityStats/reference/diversity.calc.md)
   : Compute Diversity Measures
-- [`diversity.compare()`](https://aravind-j.github.io/DiversityStats/reference/diversity.compare.md)
-  : Compare Diversity Measures
-- [`diversity.profile()`](https://aravind-j.github.io/DiversityStats/reference/diversity.profile.md)
-  : Generate Diversity Profiles for Parametric Indices
 - [`berger_parker()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`berger_parker_reciprocal()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`simpson()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
@@ -129,7 +125,16 @@ it, please support the project by citing the package.
   [`tsallis_entropy()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   [`hill_evenness()`](https://aravind-j.github.io/DiversityStats/reference/diversity_functions.md)
   : Diversity Index Functions
+
+## Comparison of Diversity Measures
+
+- [`diversity.compare()`](https://aravind-j.github.io/DiversityStats/reference/diversity.compare.md)
+  : Compare Diversity Measures
 - [`perm.test.global()`](https://aravind-j.github.io/DiversityStats/reference/permutation_tests.md)
   [`perm.test.pairwise()`](https://aravind-j.github.io/DiversityStats/reference/permutation_tests.md)
   : Permutation Tests
+- [`bootstrap.ci()`](https://aravind-j.github.io/DiversityStats/reference/bootstrap.ci.md)
+  : Bootstrap Confidence Intervals
+- [`diversity.profile()`](https://aravind-j.github.io/DiversityStats/reference/diversity.profile.md)
+  : Generate Diversity Profiles for Parametric Indices
 
