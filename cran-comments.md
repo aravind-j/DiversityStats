@@ -10,4 +10,5 @@
 * github Ubuntu 24.04.4, R-release (R 4.5.3), R-oldrel-1 (R 4.4.3) & R-devel (R 4.6.0 Pre-release).
 
 ### R CMD check results
-* There were no ERRORs or WARNINGs.
+* Misspelled words in DESCRIPTION are false positives - Margalef, Menhinick, Tsallis, Rényi.
+* There were no other NOTES, ERRORs or WARNINGs.
