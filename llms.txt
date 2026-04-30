@@ -2,7 +2,7 @@
 
 ![logo](https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png)
 
-###### Version : [0.0.0.9000](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### Aravind, J. and Suman Roy
 
@@ -22,9 +22,10 @@ Size](https://img.shields.io/github/languages/code-size/aravind-j/DiversityStats
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-maturing.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2026--02--28-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2026--04--30-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
 [![Website -
 pkgdown](https://img.shields.io/website-up-down-green-red/https/aravind-j.github.io/DiversityStats.svg)](https://aravind-j.github.io/DiversityStats/)
+[![GoatCounter](https://DiversityStats-gh.goatcounter.com/count?p=/test)](https://DiversityStats.goatcounter.com/)
 
 ------------------------------------------------------------------------
 
@@ -75,21 +76,21 @@ citation("DiversityStats")
 ```
 
 ``` R
-To cite package 'DiversityStats' in publications use:
+To cite the R package 'DiversityStats' in publications use:
 
-  Aravind J, Roy S (2026). _DiversityStats: Diversity Indices with Statistical
-  Inference_. R package version 0.0.0.9000,
-  <https://github.com/aravind-j/DiversityStats>.
+  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
+  https://aravind-j.github.io/DiversityStats/.
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
     title = {DiversityStats: Diversity Indices with Statistical Inference},
-    author = {J. Aravind and Suman Roy},
-    year = {2026},
-    note = {R package version 0.0.0.9000},
-    url = {https://github.com/aravind-j/DiversityStats},
+    author = {J. Aravind and Suman Roy and Anju Mahendru Singh},
+    note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
   }
+
+This free and open-source software implements academic research by the authors and co-workers. If you use
+it, please support the project by citing the package.
 ```
 
 # Package index
