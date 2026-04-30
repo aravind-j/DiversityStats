@@ -58,8 +58,9 @@ search:
   exclude: news/index.html
 reference:
 - title: Computation of Diversity Measures
-  contents: '`diversity.calc`'
-  contents: '`berger_parker`'
+  contents:
+  - '`diversity.calc`'
+  - '`berger_parker`'
 - title: Comparison of Diversity Measures
   contents:
   - '`diversity.compare`'
