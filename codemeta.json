@@ -8,13 +8,13 @@
   "codeRepository": "https://github.com/aravind-j/DiversityStats",
   "issueTracker": "https://github.com/aravind-j/DiversityStats/issues",
   "license": "https://spdx.org/licenses/GPL-2.0",
-  "version": "0.0.0.9000",
+  "version": "0.1.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2026-01-20 r89309 ucrt)",
+  "runtimePlatform": "R Under development (unstable) (2026-04-26 r89963 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -29,6 +29,13 @@
       "familyName": "Roy",
       "email": "suman.roy@icar.org.in",
       "@id": "https://orcid.org/0000-0001-5612-8415"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Anju Mahendru",
+      "familyName": "Singh",
+      "email": "anju.singh@icar.org.in",
+      "@id": "https://orcid.org/0000-0001-6958-1630"
     }
   ],
   "copyrightHolder": [
@@ -223,7 +230,36 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "494.877KB",
+  "fileSize": "504.578KB",
+  "citation": [
+    {
+      "@type": "SoftwareSourceCode",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": "J.",
+          "familyName": "Aravind",
+          "email": "j.aravind@icar.org.in"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Suman",
+          "familyName": "Roy",
+          "email": "suman.roy@icar.org.in"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Anju Mahendru",
+          "familyName": "Singh",
+          "email": "anju.singh@icar.org.in"
+        }
+      ],
+      "name": "DiversityStats: Diversity Indices with Statistical Inference",
+      "description": "R package version 0.1.0 https://aravind-j.github.io/DiversityStats/"
+    }
+  ],
+  "releaseNotes": "https://github.com/aravind-j/DiversityStats/blob/main/NEWS.md",
   "readme": "https://github.com/aravind-j/DiversityStats/blob/master/README.md",
-  "developmentStatus": ["https://www.repostatus.org/#wip", "https://lifecycle.r-lib.org/articles/stages.html#maturing"]
+  "developmentStatus": ["https://www.repostatus.org/#wip", "https://lifecycle.r-lib.org/articles/stages.html#maturing"],
+  "keywords": ["diversity-measures", "hill-number", "permutation-test", "renyi-entropy", "shannon-entropy", "tsallis-entropy", "berger-parker", "bootstrap-ci", "brillouin-index", "diversity-indices", "diversity-profile", "gini-simpson", "margalefs-richness", "mcintosh-diversity", "menhinicks-richness", "shannon-weaver", "shannon-wiener", "simpsons-index", "smith-and-wilson-evenness"]
 }
