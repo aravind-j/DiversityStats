@@ -9,7 +9,7 @@
 
 ###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
-##### Aravind, J. and Suman Roy
+##### *Aravind, J., Roy, Suman and Singh, Anju M.*
 
 Division of Germplasm Conservation, ICAR-National Bureau of Plant
 Genetic Resources, New Delhi.
