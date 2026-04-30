@@ -1,10 +1,25 @@
 template:
   bootstrap: 5
-  light-switch: no
+  light-switch: yes
   math-rendering: mathjax
   bslib:
     bootswatch: simplex
     pkgdown-nav-height: 100px
+  includes:
+    in_header: |
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+       <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6H0HGPP5G" ></script>
+       <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-E6H0HGPP5G');
+       </script>
+       <!-- Google tag (gtag.js) -->
+    after_body: >
+      <script data-goatcounter="https://diversitystats.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 deploy:
   install_metadata: yes
@@ -16,7 +31,7 @@ navbar:
     left:
     - home
     - reference
-    - articles
+    - news
     right:
     - search
     - github

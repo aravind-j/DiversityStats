@@ -7,7 +7,7 @@
 
 <img src="https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png" align="right" alt="logo" width="173" height = "200" style = "border: none; float: right;">
 
-###### Version : [0.0.0.9000](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### Aravind, J. and Suman Roy
 
@@ -27,7 +27,7 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 <!-- [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/DiversityStats?color=green)](https://CRAN.R-project.org/package=DiversityStats) -->
 
 <!-- 
-[![develVersion](https://img.shields.io/badge/devel%20version-0.0.0.9000-orange.svg)](https://github.com/aravind-j/DiversityStats)
+[![develVersion](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/aravind-j/DiversityStats)
 -->
 
 [![Github Code
@@ -38,12 +38,12 @@ Size](https://img.shields.io/github/languages/code-size/aravind-j/DiversityStats
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-maturing.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2026--02--28-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2026--04--30-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
 <!-- [![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.zenodo.14889174.svg)](https://doi.org/10.5281/zenodo.14889174) -->
 [![Website -
 pkgdown](https://img.shields.io/website-up-down-green-red/https/aravind-j.github.io/DiversityStats.svg)](https://aravind-j.github.io/DiversityStats/)
 <!-- [![.](https://pro-pulsar-193905.appspot.com/G-xxxxxxxx/welcome-page)](https://github.com/aravind-j/google-analytics-beacon) -->
-<!-- [![GoatCounter](https://DiversityStats-gh.goatcounter.com/count?p=/test)](https://DiversityStats.goatcounter.com/)  -->
+[![GoatCounter](https://DiversityStats-gh.goatcounter.com/count?p=/test)](https://DiversityStats.goatcounter.com/)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/aravind-j/DiversityStats) -->
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/aravind-j/DiversityStats/total.svg)] -->
 <!-- [![Rdoc](http://www.rdocumentation.org/badges/version/DiversityStats)](http://www.rdocumentation.org/packages/DiversityStats) -->
@@ -171,18 +171,18 @@ To cite the methods in the package use:
 citation("DiversityStats")
 ```
 
-    To cite package 'DiversityStats' in publications use:
+    To cite the R package 'DiversityStats' in publications use:
 
-      Aravind J, Roy S (2026). _DiversityStats: Diversity Indices with Statistical
-      Inference_. R package version 0.0.0.9000,
-      <https://github.com/aravind-j/DiversityStats>.
+      Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
+      https://aravind-j.github.io/DiversityStats/.
 
     A BibTeX entry for LaTeX users is
 
       @Manual{,
         title = {DiversityStats: Diversity Indices with Statistical Inference},
-        author = {J. Aravind and Suman Roy},
-        year = {2026},
-        note = {R package version 0.0.0.9000},
-        url = {https://github.com/aravind-j/DiversityStats},
+        author = {J. Aravind and Suman Roy and Anju Mahendru Singh},
+        note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
       }
+
+    This free and open-source software implements academic research by the authors and co-workers. If you use
+    it, please support the project by citing the package.
