@@ -2,7 +2,7 @@
 
 ![logo](https://raw.githubusercontent.com/aravind-j/DiversityStats/master/inst/extdata/DiversityStats.png)
 
-###### Version : [0.1.0](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.1.0.9000](https://aravind-j.github.io/DiversityStats/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### *Aravind, J., Roy, Suman and Singh, Anju M.*
 
@@ -15,14 +15,20 @@ Genetic Resources, New Delhi.
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R)](https://cran.r-project.org/)
 [![License: GPL
 v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version-last-release/DiversityStats)](https://cran.r-project.org/package=DiversityStats)
+[![Dependencies](https://tinyverse.netlify.app/status/DiversityStats)](https://cran.r-project.org/package=DiversityStats)
+–\> [![rstudio mirror
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/DiversityStats?color=green)](https://CRAN.R-project.org/package=DiversityStats)
+[![develVersion](https://img.shields.io/badge/devel%20version-0.1.0.9000-orange.svg)](https://github.com/aravind-j/DiversityStats)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/aravind-j/DiversityStats.svg)](https://github.com/aravind-j/DiversityStats)
-
+[![R-CMD-check](https://github.com/aravind-j/DiversityStats/workflows/R-CMD-check/badge.svg)](https://github.com/aravind-j/DiversityStats/actions)
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-maturing.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2026--04--30-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2026--05--06-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Zenodo
+DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.zenodo.14889174.svg)](https://doi.org/10.5281/zenodo.20056661)
 [![Website -
 pkgdown](https://img.shields.io/website-up-down-green-red/https/aravind-j.github.io/DiversityStats.svg)](https://aravind-j.github.io/DiversityStats/)
 [![GoatCounter](https://DiversityStats-gh.goatcounter.com/count?p=/test)](https://DiversityStats.goatcounter.com/)
@@ -46,6 +52,8 @@ data.
 
 ## Installation
 
+The package can be installed from CRAN as follows:
+
 The development version can be installed from github as follows:
 
 ``` r
@@ -65,9 +73,41 @@ news(package='DiversityStats')
 
 ## Links
 
+[CRAN page](https://cran.r-project.org/package=DiversityStats)
+
 [Github page](https://github.com/aravind-j/DiversityStats)
 
 [Documentation website](https://aravind-j.github.io/DiversityStats/)
+
+[Zenodo DOI](https://doi.org/10.5281/zenodo.20056661)
+
+## CRAN checks
+
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html)
+
+| Flavour | CRAN check |
+|----|----|
+| r-devel-linux-x86_64-debian-clang | [![CRAN check - r-devel-linux-x86_64-debian-clang](https://badges.cranchecks.info/flavor/r-devel-linux-x86_64-debian-clang/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-devel-linux-x86_64-debian-gcc | [![CRAN check - r-devel-linux-x86_64-debian-gcc](https://badges.cranchecks.info/flavor/r-devel-linux-x86_64-debian-gcc/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-devel-linux-x86_64-fedora-clang | [![CRAN check - r-devel-linux-x86_64-fedora-clang](https://badges.cranchecks.info/flavor/r-devel-linux-x86_64-fedora-clang/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-devel-linux-x86_64-fedora-gcc | [![CRAN check - r-devel-linux-x86_64-fedora-gcc](https://badges.cranchecks.info/flavor/r-devel-linux-x86_64-fedora-gcc/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-patched-linux-x86_64 | [![CRAN check - r-patched-linux-x86_64](https://badges.cranchecks.info/flavor/r-patched-linux-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-release-linux-x86_64 | [![CRAN check - r-release-linux-x86_64](https://badges.cranchecks.info/flavor/r-release-linux-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html)
+
+| Flavour | CRAN check |
+|----|----|
+| r-devel-windows-x86_64 | [![CRAN check - r-devel-windows-x86_64](https://badges.cranchecks.info/flavor/r-devel-windows-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-release-windows-x86_64 | [![CRAN check - r-release-windows-x86_64](https://badges.cranchecks.info/flavor/r-release-windows-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-oldrel-windows-x86_64 | [![CRAN check - r-oldrel-windows-x86_64](https://badges.cranchecks.info/flavor/r-oldrel-windows-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+
+[![MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html)
+
+| Flavour | CRAN check |
+|----|----|
+| r-release-macos-x86_64 | [![CRAN check - r-release-macos-x86_64](https://badges.cranchecks.info/flavor/r-release-macos-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
+| r-oldrel-macos-x86_64 | [![CRAN check - r-oldrel-macos-x86_64](https://badges.cranchecks.info/flavor/r-oldrel-macos-x86_64/DiversityStats.svg)](https://cran.r-project.org/web/checks/check_results_DiversityStats.html) |
 
 ## Citing `DiversityStats`
 
@@ -81,17 +121,17 @@ citation("DiversityStats")
 ``` R
 To cite the R package 'DiversityStats' in publications use:
 
-  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
-  https://aravind-j.github.io/DiversityStats/.
+  Aravind, J., Roy, S., and Singh, A. M. ().  DiversityStats: Diversity Indices with Statistical
+  Inference. R package version 0.1.0.9000, https://aravind-j.github.io/DiversityStats/.
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
     title = {DiversityStats: Diversity Indices with Statistical Inference},
     author = {J. Aravind and Suman Roy and Anju Mahendru Singh},
-    note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
+    note = {R package version 0.1.0.9000 https://aravind-j.github.io/DiversityStats/},
   }
 
-This free and open-source software implements academic research by the authors and co-workers. If you use
-it, please support the project by citing the package.
+This free and open-source software implements academic research by the authors and co-workers. If
+you use it, please support the project by citing the package.
 ```
