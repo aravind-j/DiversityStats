@@ -49,6 +49,7 @@ data.
 The development version can be installed from github as follows:
 
 ``` r
+
 # Install development version from Github
 devtools::install_github("aravind-j/DiversityStats")
 ```
@@ -58,6 +59,7 @@ devtools::install_github("aravind-j/DiversityStats")
 To know whats new in this version type:
 
 ``` r
+
 news(package='DiversityStats')
 ```
 
@@ -72,14 +74,14 @@ news(package='DiversityStats')
 To cite the methods in the package use:
 
 ``` r
+
 citation("DiversityStats")
 ```
 
 ``` R
 To cite the R package 'DiversityStats' in publications use:
 
-  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical
-  Inference. R package version 0.1.0,
+  Aravind, J. ().  DiversityStats: Diversity Indices with Statistical Inference. R package version 0.1.0,
   https://aravind-j.github.io/DiversityStats/.
 
 A BibTeX entry for LaTeX users is
@@ -90,7 +92,6 @@ A BibTeX entry for LaTeX users is
     note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
   }
 
-This free and open-source software implements academic research by the
-authors and co-workers. If you use it, please support the project by
-citing the package.
+This free and open-source software implements academic research by the authors and co-workers. If you use
+it, please support the project by citing the package.
 ```

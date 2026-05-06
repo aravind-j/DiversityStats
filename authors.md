@@ -19,12 +19,12 @@
 Source:
 [`inst/CITATION`](https://github.com/aravind-j/DiversityStats/blob/master/inst/CITATION)
 
-Aravind, J. (). DiversityStats: Diversity Indices with Statistical
-Inference. R package version 0.1.0,
+Aravind, J., Roy, S., and Singh, A. M. (). DiversityStats: Diversity
+Indices with Statistical Inference. R package version 0.1.0.9000,
 https://aravind-j.github.io/DiversityStats/.
 
     @Manual{,
       title = {DiversityStats: Diversity Indices with Statistical Inference},
       author = {J. Aravind and Suman Roy and Anju Mahendru Singh},
-      note = {R package version 0.1.0 https://aravind-j.github.io/DiversityStats/},
+      note = {R package version 0.1.0.9000 https://aravind-j.github.io/DiversityStats/},
     }

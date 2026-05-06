@@ -114,6 +114,7 @@ precision.
 ## Examples
 
 ``` r
+
 library(EvaluateCore)
 library(dplyr)
 #> 
