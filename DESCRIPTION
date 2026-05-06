@@ -51,7 +51,9 @@ Suggests: cluster,
 RdMacros: mathjaxr,
     Rdpack
 Copyright: 2025-2026, ICAR-NBPGR
-URL: https://github.com/aravind-j/DiversityStats
+URL: https://cran.r-project.org/package=PGRdup,
+   https://github.com/aravind-j/DiversityStats,
+   https://doi.org/10.5281/zenodo.20056661,
    https://aravind-j.github.io/DiversityStats/
 BugReports: https://github.com/aravind-j/DiversityStats/issues
 Depends: 
