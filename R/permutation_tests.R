@@ -121,7 +121,8 @@ perm.test.global <- function(x, group, fun, R = 1000,
 
   if (!is.numeric(max.invalid) || length(max.invalid) != 1L ||
       max.invalid <= 0 || max.invalid >= 1) {
-    stop("'max.invalid' must be a single number between 0 and 1.", call. = FALSE)
+    stop("'max.invalid' must be a single number between 0 and 1.",
+         call. = FALSE)
   }
 
   if (is.factor(x)) {
@@ -295,7 +296,8 @@ perm.test.pairwise <- function(x, group, fun, R = 1000,
 
   if (!is.numeric(max.invalid) || length(max.invalid) != 1L ||
       max.invalid <= 0 || max.invalid >= 1) {
-    stop("'max.invalid' must be a single number between 0 and 1.", call. = FALSE)
+    stop("'max.invalid' must be a single number between 0 and 1.",
+         call. = FALSE)
   }
 
   if (is.factor(x)) {
