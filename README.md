@@ -31,7 +31,7 @@ Size](https://img.shields.io/github/languages/code-size/aravind-j/DiversityStats
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-maturing.svg)](https://lifecycle.r-lib.org/articles/stages.html#maturing)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2026--05--07-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2026--05--15-yellowgreen.svg)](https://github.com/aravind-j/DiversityStats/)
 [![Zenodo
 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.zenodo.14889174.svg)](https://doi.org/10.5281/zenodo.20056661)
 [![Website -
@@ -136,8 +136,9 @@ citation("DiversityStats")
 
     To cite the R package 'DiversityStats' in publications use:
 
-      Aravind, J., Roy, S., and Singh, A. M. ().  DiversityStats: Diversity Indices with Statistical Inference. R package
-      version 0.1.0.9000, https://aravind-j.github.io/DiversityStats/.
+      Aravind, J., Roy, S., and Singh, A. M. ().  DiversityStats: Diversity
+      Indices with Statistical Inference. R package version 0.1.0.9000,
+      https://aravind-j.github.io/DiversityStats/.
 
     A BibTeX entry for LaTeX users is
 
@@ -147,5 +148,6 @@ citation("DiversityStats")
         note = {R package version 0.1.0.9000 https://aravind-j.github.io/DiversityStats/},
       }
 
-    This free and open-source software implements academic research by the authors and co-workers. If you use it, please support
-    the project by citing the package.
+    This free and open-source software implements academic research by the
+    authors and co-workers. If you use it, please support the project by
+    citing the package.
