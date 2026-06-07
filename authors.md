@@ -21,10 +21,10 @@ Source:
 
 Aravind, J., Roy, S., and Singh, A. M. (). DiversityStats: Diversity
 Indices with Statistical Inference. R package version 0.1.0.9000,
-https://aravind-j.github.io/DiversityStats/.
+https://aravind-j.github.io/DiversityStats/https://CRAN.R-project.org/package=DiversityStats.
 
     @Manual{,
       title = {DiversityStats: Diversity Indices with Statistical Inference},
       author = {J. Aravind and Suman Roy and Anju Mahendru Singh},
-      note = {R package version 0.1.0.9000 https://aravind-j.github.io/DiversityStats/},
+      note = {R package version 0.1.0.9000 https://aravind-j.github.io/DiversityStats/ https://CRAN.R-project.org/package=DiversityStats},
     }
