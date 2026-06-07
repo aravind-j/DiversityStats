@@ -31,7 +31,6 @@ Description: Provides a comprehensive framework for analyzing diversity from
     abundance counts) and genetic or phenotypic class frequency data.
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.3.3
 BuildManual: TRUE
 Imports: boot,
     dplyr,
@@ -51,10 +50,11 @@ Suggests: cluster,
 RdMacros: mathjaxr,
     Rdpack
 Copyright: 2025-2026, ICAR-NBPGR
-URL: https://cran.r-project.org/package=PGRdup,
+URL: https://cran.r-project.org/package=DiversityStats,
    https://github.com/aravind-j/DiversityStats,
    https://doi.org/10.5281/zenodo.20056661,
    https://aravind-j.github.io/DiversityStats/
 BugReports: https://github.com/aravind-j/DiversityStats/issues
 Depends: 
     R (>= 3.5)
+Config/roxygen2/version: 8.0.0
